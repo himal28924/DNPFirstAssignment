@@ -1,0 +1,17 @@
+/Users/prabina/Desktop/Development/FirstAssignmentDNP/Application/bin/Debug/net6.0/Application.deps.json
+/Users/prabina/Desktop/Development/FirstAssignmentDNP/Application/bin/Debug/net6.0/Application.dll
+/Users/prabina/Desktop/Development/FirstAssignmentDNP/Application/bin/Debug/net6.0/Application.pdb
+/Users/prabina/Desktop/Development/FirstAssignmentDNP/Application/bin/Debug/net6.0/Contracts.dll
+/Users/prabina/Desktop/Development/FirstAssignmentDNP/Application/bin/Debug/net6.0/Entities.dll
+/Users/prabina/Desktop/Development/FirstAssignmentDNP/Application/bin/Debug/net6.0/Contracts.pdb
+/Users/prabina/Desktop/Development/FirstAssignmentDNP/Application/bin/Debug/net6.0/Entities.pdb
+/Users/prabina/Desktop/Development/FirstAssignmentDNP/Application/obj/Debug/net6.0/Application.csproj.AssemblyReference.cache
+/Users/prabina/Desktop/Development/FirstAssignmentDNP/Application/obj/Debug/net6.0/Application.GeneratedMSBuildEditorConfig.editorconfig
+/Users/prabina/Desktop/Development/FirstAssignmentDNP/Application/obj/Debug/net6.0/Application.AssemblyInfoInputs.cache
+/Users/prabina/Desktop/Development/FirstAssignmentDNP/Application/obj/Debug/net6.0/Application.AssemblyInfo.cs
+/Users/prabina/Desktop/Development/FirstAssignmentDNP/Application/obj/Debug/net6.0/Application.csproj.CoreCompileInputs.cache
+/Users/prabina/Desktop/Development/FirstAssignmentDNP/Application/obj/Debug/net6.0/Application.csproj.CopyComplete
+/Users/prabina/Desktop/Development/FirstAssignmentDNP/Application/obj/Debug/net6.0/Application.dll
+/Users/prabina/Desktop/Development/FirstAssignmentDNP/Application/obj/Debug/net6.0/refint/Application.dll
+/Users/prabina/Desktop/Development/FirstAssignmentDNP/Application/obj/Debug/net6.0/Application.pdb
+/Users/prabina/Desktop/Development/FirstAssignmentDNP/Application/obj/Debug/net6.0/ref/Application.dll

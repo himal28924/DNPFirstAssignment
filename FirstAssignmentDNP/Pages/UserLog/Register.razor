@@ -1,0 +1,100 @@
+@using Contracts
+@using Entities.Model
+@using Microsoft.AspNetCore.Components
+@inject NavigationManager NvgMgr
+@inject IUserService UserInjection 
+
+<div class="card">
+    <h3> Registerstaion form</h3>
+    <EditForm Model="@newUser" OnValidSubmit="@AddNewUser">
+
+        <DataAnnotationsValidator/>
+        <ValidationSummary/>
+
+        <div class="field">
+            <span>
+                <label> Name : </label>
+            </span>
+            <span>
+                <InputText @bind-Value="newUser.Name"/>
+            </span>
+        </div>
+        <div class="field">
+            <span>
+                <label> UserName : </label>
+            </span>
+            <span>
+                <InputText  @bind-Value="newUser.UserName"/>
+            </span>
+        </div>
+        <div class="field">
+            <span>
+                <label> Password : </label>
+            </span>
+            <span>
+                <InputText @bind-Value="newUser.Password"/>
+            </span>
+        </div>
+
+        <p class="actions">
+            <button class="registerbtn" type="submit">Create</button>
+        </p>
+        
+        <hr/>
+        
+    </EditForm>
+
+    @if (!string.IsNullOrEmpty(errorLabel))
+    {
+        <label style="color: red">@errorLabel</label>
+    }
+
+</div>
+
+      
+
+
+
+       
+
+
+
+
+@code {
+    private User newUser = new User() ;
+    private string errorLabel;
+    private bool showLoginUser;
+
+    private async Task AddNewUser()
+    {
+        try
+        {
+            Console.WriteLine("Inside Register.razor 72");
+            errorLabel = "";
+            
+            User  a  = await UserInjection.AddUserAsync(newUser);
+            if (a.UserName!= null)
+            {
+               
+                newUser = new User();
+                NvgMgr.NavigateTo("/");
+            }
+            else
+            {
+                errorLabel = "Sorry username already exits";
+            }
+           
+            
+        }
+        catch (Exception e)
+        {
+            errorLabel = e.Message;
+            return;
+
+        }
+        
+       
+       
+    } 
+    
+}

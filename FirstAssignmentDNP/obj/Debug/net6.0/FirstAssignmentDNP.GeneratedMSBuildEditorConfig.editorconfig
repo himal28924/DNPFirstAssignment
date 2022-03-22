@@ -1,0 +1,72 @@
+is_global = true
+build_property.TargetFramework = net6.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = FirstAssignmentDNP
+build_property.RootNamespace = FirstAssignmentDNP
+build_property.ProjectDir = /Users/prabina/Desktop/Development/FirstAssignmentDNP/FirstAssignmentDNP/
+build_property.RazorLangVersion = 6.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = /Users/prabina/Desktop/Development/FirstAssignmentDNP/FirstAssignmentDNP
+build_property._RazorSourceGeneratorDebug = 
+
+[/Users/prabina/Desktop/Development/FirstAssignmentDNP/FirstAssignmentDNP/App.razor]
+build_metadata.AdditionalFiles.TargetPath = QXBwLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/prabina/Desktop/Development/FirstAssignmentDNP/FirstAssignmentDNP/Pages/Counter.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvQ291bnRlci5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/prabina/Desktop/Development/FirstAssignmentDNP/FirstAssignmentDNP/Pages/FetchData.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvRmV0Y2hEYXRhLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/prabina/Desktop/Development/FirstAssignmentDNP/FirstAssignmentDNP/Pages/Index.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvSW5kZXgucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/prabina/Desktop/Development/FirstAssignmentDNP/FirstAssignmentDNP/Shared/SurveyPrompt.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkL1N1cnZleVByb21wdC5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/prabina/Desktop/Development/FirstAssignmentDNP/FirstAssignmentDNP/_Imports.razor]
+build_metadata.AdditionalFiles.TargetPath = X0ltcG9ydHMucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/prabina/Desktop/Development/FirstAssignmentDNP/FirstAssignmentDNP/Pages/UserLog/LogIn.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvVXNlckxvZy9Mb2dJbi5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = b-i9fuwkwxpn
+
+[/Users/prabina/Desktop/Development/FirstAssignmentDNP/FirstAssignmentDNP/Pages/UserLog/Register.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvVXNlckxvZy9SZWdpc3Rlci5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = b-mlwuugir2s
+
+[/Users/prabina/Desktop/Development/FirstAssignmentDNP/FirstAssignmentDNP/Pages/UserLog/SignInOrUp.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvVXNlckxvZy9TaWduSW5PclVwLnJhem9y
+build_metadata.AdditionalFiles.CssScope = b-v1v0gxg715
+
+[/Users/prabina/Desktop/Development/FirstAssignmentDNP/FirstAssignmentDNP/Shared/MainLayout.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkL01haW5MYXlvdXQucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = b-mb4lnoar6h
+
+[/Users/prabina/Desktop/Development/FirstAssignmentDNP/FirstAssignmentDNP/Shared/NavMenu.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkL05hdk1lbnUucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = b-hg82ir1ipk
+
+[/Users/prabina/Desktop/Development/FirstAssignmentDNP/FirstAssignmentDNP/Pages/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvRXJyb3IuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/prabina/Desktop/Development/FirstAssignmentDNP/FirstAssignmentDNP/Pages/_Host.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvX0hvc3QuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/prabina/Desktop/Development/FirstAssignmentDNP/FirstAssignmentDNP/Pages/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvX0xheW91dC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 

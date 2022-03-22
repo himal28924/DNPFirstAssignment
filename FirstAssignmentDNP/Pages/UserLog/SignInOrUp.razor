@@ -1,0 +1,40 @@
+@page "/SignInOrUp"
+<h3>SignInOrUp</h3>
+@if (showSignIn)
+{
+    
+    <LogIn/>
+    <div>
+        <span> Don't have account ? <button class="loginbtn" @onclick="SignUp" >signup </button>
+        </span>
+    </div>
+   
+}
+@if (ShowSignUp)
+{
+    <Register/>
+    <div class="registerbtn">
+        <span> Already have account ? <button class="loginbtn"  @onclick="SignIn">signin </button>
+        </span>
+    </div>
+}
+
+
+
+@code {
+    private bool showSignIn = true;
+    private bool ShowSignUp;
+
+    private void SignUp()
+    {
+        ShowSignUp = true;
+        showSignIn = false;
+    }
+
+    private void SignIn()
+    {
+        showSignIn = true;
+        ShowSignUp = false;
+    }
+
+}
