@@ -21,8 +21,9 @@ public class UserServiceImpl:IUserService
         return user;
     }
 
-    public Task<User?> GetUserAsync(string username)
+    public  async Task<User?> GetUserAsync(string username)
     {
-        throw new NotImplementedException();
+        User user = await userDao.GetUserAsync(username);
+        return user;
     }
 }

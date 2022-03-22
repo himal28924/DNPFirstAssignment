@@ -1,4 +1,5 @@
 using System.Security.Claims;
+using Entities.Model;
 
 namespace Contracts;
 
@@ -9,4 +10,5 @@ public interface IAuthService
     public Task<ClaimsPrincipal> GetAuthAsync();
 
     public Action<ClaimsPrincipal> OnAuthStateChanged { get; set; }
+    
 }

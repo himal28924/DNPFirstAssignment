@@ -36,11 +36,6 @@
         <div class="card">
             <h3>Hello, @context.User.Identity.Name</h3>
         </div>
-        
-        <div class="field">
-            <h3> Do you want to log out</h3>
-            <button class="loginbtn" @onclick="LogoutAsync">Log out</button>
-        </div>
     </Authorized>
 </AuthorizeView>
 
@@ -70,19 +65,7 @@
             errorLabel = "Please , enter correct information";
         }
     }
-    private async Task LogoutAsync()
-    {
-        errorLabel = "";
-        try
-        {
-            await authService.LogoutAsync();
-            navMgr.NavigateTo("/");
-        }
-        catch (Exception e)
-        {
-            errorLabel = $"Error: {e.Message}";
-        }
-    }
+    
 
   
 }

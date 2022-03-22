@@ -16,6 +16,10 @@ builder.Services.AddScoped<IUserService,UserServiceImpl>();
 builder.Services.AddScoped<AuthenticationStateProvider,SimpleAuthenticationStateProvider>();
 builder.Services.AddScoped<IUserDAO,UserDAOImpl>();
 builder.Services.AddScoped<IAuthService,AuthServiceImpl>();
+builder.Services.AddScoped<IForumDAO, ForumDAOImpl>();
+builder.Services.AddScoped<IForumService, ForumServiceImpl>();
+builder.Services.AddScoped<ForumFileContext>();
+
 
 var app = builder.Build();
 

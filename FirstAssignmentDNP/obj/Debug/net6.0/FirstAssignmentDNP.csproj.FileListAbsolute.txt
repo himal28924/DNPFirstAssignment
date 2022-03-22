@@ -37,3 +37,4 @@
 /Users/prabina/Desktop/Development/FirstAssignmentDNP/FirstAssignmentDNP/obj/Debug/net6.0/ref/FirstAssignmentDNP.dll
 /Users/prabina/Desktop/Development/FirstAssignmentDNP/FirstAssignmentDNP/obj/Debug/net6.0/scopedcss/Pages/UserLog/LogIn.razor.rz.scp.css
 /Users/prabina/Desktop/Development/FirstAssignmentDNP/FirstAssignmentDNP/obj/Debug/net6.0/scopedcss/Pages/UserLog/SignInOrUp.razor.rz.scp.css
+/Users/prabina/Desktop/Development/FirstAssignmentDNP/FirstAssignmentDNP/bin/Debug/net6.0/users.json
