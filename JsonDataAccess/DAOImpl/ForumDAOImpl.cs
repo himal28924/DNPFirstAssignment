@@ -14,10 +14,16 @@ public class ForumDAOImpl:IForumDAO
     }
 
     public async Task<Forum> AddForumAsync(Forum forum)
-    {Console.WriteLine("Time to save 17 dao impl");
+    {
         forumFileContext.Forum.Add(forum);
-        Console.WriteLine("i am back to save 19 dao");
+      
         await forumFileContext.SaveChanges();
         return forum;
+    }
+
+    public async Task<ICollection<Forum>> GetAllForumAsync()
+    {
+      ICollection<Forum> AllForum =  await forumFileContext.GetAllForumAsync();
+      return  AllForum;
     }
 }

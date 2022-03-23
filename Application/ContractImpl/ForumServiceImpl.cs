@@ -19,4 +19,10 @@ public class ForumServiceImpl:IForumService
         await forumDao.AddForumAsync(forum);
         return forum;
     }
+
+    public async Task<ICollection<Forum>> GetAllForumAsync()
+    {
+       ICollection<Forum> AllForums = await forumDao.GetAllForumAsync();
+       return AllForums;
+    }
 }
