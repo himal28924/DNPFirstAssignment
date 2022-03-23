@@ -1,0 +1,70 @@
+@using Contracts
+@using Entities.Model
+@page "/AddForum"
+@inject IForumService forumService
+@inject NavigationManager navMgr
+
+<h3>Forum</h3>
+
+<AuthorizeView>
+    <NotAuthorized>
+        <p> Please go to login</p>
+
+    </NotAuthorized>
+    <Authorized >
+        <EditForm Context="what" Model="@forum" >
+            <div class="card">
+                <div class="field">
+                    <label>Title</label>
+                    <InputText type="text" @bind-Value="forum.title"/>
+                </div>
+                <div class="field">
+                    <label style="text-align: center">Description : </label>
+                    <InputTextArea type="text" @bind-Value="forum.description"/>
+
+                </div>
+
+                <div class="field">
+                    <button class="addForumbtn" type="submit" @onclick="@(() =>AddForumAsync(context.User.Identity.Name))">Create Forum</button>
+                </div>
+            </div>
+            @if (!string.IsNullOrEmpty(errorLabel))
+            {
+                <div class="field">
+                    <label style="color: red">
+                        @errorLabel
+                    </label>
+                </div>
+            }
+
+             
+            
+        </EditForm>
+
+    </Authorized>
+</AuthorizeView>
+
+
+@code {
+    private Forum forum = new Forum();
+    private string errorLabel = "";
+
+
+    private async Task AddForumAsync(string username)
+    {
+        try
+        {
+            forum.username = username;
+            await forumService.AddForumAsync(forum);
+
+            Console.WriteLine(forum.username);
+        }
+        catch (Exception e)
+        {
+            errorLabel = "Sorry couldn't add the forum";
+        }
+    }
+
+
+
+}

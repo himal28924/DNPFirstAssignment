@@ -13,4 +13,8 @@ public class Forum
         this.description = description;
         this.username = username;
     }
+
+    public Forum()
+    {
+    }
 }
