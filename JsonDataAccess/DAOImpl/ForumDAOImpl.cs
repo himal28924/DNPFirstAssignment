@@ -21,9 +21,9 @@ public class ForumDAOImpl:IForumDAO
         return forum;
     }
 
-    public async Task<ICollection<Forum>> GetAllForumAsync()
+    public ICollection<Forum> GetAllForumAsync()
     {
-      ICollection<Forum> AllForum =  await forumFileContext.GetAllForumAsync();
+      ICollection<Forum> AllForum =   forumFileContext.GetAllForumAsync();
       return  AllForum;
     }
 }

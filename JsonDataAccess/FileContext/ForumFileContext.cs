@@ -57,7 +57,7 @@ public class ForumFileContext
         forums = null;
     }
 
-    public async Task<ICollection<Forum>> GetAllForumAsync()
+    public  ICollection<Forum> GetAllForumAsync()
     {
          return Forum;
     }

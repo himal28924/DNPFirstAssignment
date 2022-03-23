@@ -6,5 +6,5 @@ public interface IForumService
 {
     public Task<Forum> AddForumAsync(Forum forum);
 
-    public Task<ICollection<Forum>> GetAllForumAsync();
+    public ICollection<Forum> GetAllForumAsync();
 }

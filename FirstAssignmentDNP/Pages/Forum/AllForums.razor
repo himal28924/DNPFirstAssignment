@@ -1,6 +1,34 @@
 @page "/AllForums"
+@using Entities.Model
+@using Contracts
+@inject IForumService forumService
 <h3>AllForums</h3>
 
+ @foreach (var item in allForums)
+        {
+            
+            <div class="card">
+            
+            <div class="field">
+                <label>@item.title</label>
+            </div>
+            <p>@item.username</p>
+            <div class="field">
+                <label>@item.description</label>
+            </div>
+            </div>
+           }
+
+
 @code {
-    
+    private ICollection<Forum>? allForums;
+    private string title, description, userName ;
+    private string errorLabel = "";
+
+
+    protected override void OnInitialized()
+    {
+        allForums = forumService.GetAllForumAsync();
+    }
+
 }
