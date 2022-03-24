@@ -2,16 +2,18 @@ namespace Entities.Model;
 
 public class Forum
 {
-    public string title { get; set; }
-    public string description { get; set; }
-    public string username { get; set; }
-    
+    public string Title { get; set; }
+    public string Description { get; set; }
+    public string Username { get; set; }
+    public int Id { get; set; }
 
-    public Forum(string title, string description, string username)
+
+    public Forum(string title, string description, string username, int id)
     {
-        this.title = title;
-        this.description = description;
-        this.username = username;
+        Title = title;
+        Description = description;
+        Username = username;
+        Id = Id;
     }
 
     public Forum()

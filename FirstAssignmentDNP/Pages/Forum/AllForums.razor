@@ -3,18 +3,18 @@
 @using Contracts
 @inject IForumService forumService
 <h3>AllForums</h3>
-
+@*
  @foreach (var item in allForums)
         {
             
             <div class="card">
             
             <div class="field">
-                <label>@item.title</label>
+                <label>@item.Title</label>
             </div>
-            <p>@item.username</p>
+            <p>@item.Username</p>
             <div class="field">
-                <label>@item.description</label>
+                <label>@item.Description</label>
             </div>
             </div>
            }
@@ -32,3 +32,4 @@
     }
 
 }
+*@

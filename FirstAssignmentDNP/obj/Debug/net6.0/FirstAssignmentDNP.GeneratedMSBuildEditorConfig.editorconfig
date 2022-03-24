@@ -27,6 +27,10 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = UGFnZXMvRmV0Y2hEYXRhLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
+[/Users/prabina/Desktop/Development/FirstAssignmentDNP/FirstAssignmentDNP/Pages/Forum/AddMainForum.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvRm9ydW0vQWRkTWFpbkZvcnVtLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
 [/Users/prabina/Desktop/Development/FirstAssignmentDNP/FirstAssignmentDNP/Pages/Forum/AllForums.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXMvRm9ydW0vQWxsRm9ydW1zLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
@@ -42,6 +46,10 @@ build_metadata.AdditionalFiles.CssScope =
 [/Users/prabina/Desktop/Development/FirstAssignmentDNP/FirstAssignmentDNP/Pages/Forum/AddForum.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXMvRm9ydW0vQWRkRm9ydW0ucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = b-86iqszccih
+
+[/Users/prabina/Desktop/Development/FirstAssignmentDNP/FirstAssignmentDNP/Pages/Forum/MainForums.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvRm9ydW0vTWFpbkZvcnVtcy5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = b-o1nvbc81ma
 
 [/Users/prabina/Desktop/Development/FirstAssignmentDNP/FirstAssignmentDNP/Pages/UserLog/LogIn.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXMvVXNlckxvZy9Mb2dJbi5yYXpvcg==
