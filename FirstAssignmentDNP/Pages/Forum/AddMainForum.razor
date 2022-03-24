@@ -1,9 +1,10 @@
+@page "/AddMainForum"
 @using Contracts
 @using Entities.Model
-@page "/AddForum"
+
 @inject IForumService forumService
 @inject NavigationManager navMgr
-@*
+
 <h3>Forum</h3>
 
 <AuthorizeView>
@@ -12,20 +13,16 @@
 
     </NotAuthorized>
     <Authorized >
-        <EditForm Context="what" Model="@forum">
+        <EditForm Context="what" Model="@mainForum">
             <div class="card">
                 <div class="form-group">
                     <label >Title</label>
-                    <textarea class="form-control" rows="1" @bind="forum.Title"></textarea>
+                    <textarea class="form-control" rows="1" @bind="mainForum.Title"></textarea>
                 </div>
                 <br/>
-                <div class="form-group">
-                    <label >Description</label>
-                    <textarea class="form-control" rows="8" @bind="forum.Description"></textarea>
-                </div>
-
+                
                 <div class="field">
-                    <button class="addForumbtn" type="submit" @onclick="@(() => AddForumAsync(context.User.Identity.Name))">Create Forum</button>
+                    <button class="addForumbtn" type="submit" @onclick="@(() => AddForumAsync(context.User.Identity?.Name))">Create Forum</button>
                 </div>
             </div>
             @if (!string.IsNullOrEmpty(errorLabel))
@@ -44,32 +41,34 @@
     </Authorized>
 </AuthorizeView>
 
-*@
-@*
+
 @code {
-    private Forum forum = new Forum();
+    private MainForum? mainForum = new MainForum();
     private string errorLabel = "";
 
 
-    private async Task AddForumAsync(string username)
+    private async Task AddForumAsync(string? username)
     {
-        if (string.IsNullOrEmpty(forum.Description) && string.IsNullOrEmpty(forum.Title))
+        if ( string.IsNullOrEmpty(mainForum.Title))
         {
             errorLabel = "Sorry";
             return;
         }
         try
         {
-            forum.Username = username;
-            await forumService.AddForumAsync(forum);
-            navMgr.NavigateTo("/AllForums");
-            forum = new Forum();
+            Console.WriteLine("Inside AddNMAinForum 59");
+            mainForum.CreatedBy = username;
+            Console.WriteLine(username);
+            await forumService.AddMainForum(mainForum);
+           
+            mainForum = new MainForum();
         }
         catch (Exception e)
         {
             errorLabel = "Sorry couldn't add the forum";
         }
     }
-    
-}
-*@
+
+
+
+}}
