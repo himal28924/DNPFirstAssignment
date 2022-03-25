@@ -15,8 +15,8 @@
     <Authorized >
         <EditForm Context="what" Model="@mainForum">
             <div class="card">
-                <div class="form-group">
-                    <label >Title</label>
+                <div class="form">
+                    <label style="color: #3a0647" >Title</label>
                     <textarea class="form-control" rows="1" @bind="mainForum.Title"></textarea>
                 </div>
                 <br/>
@@ -62,6 +62,7 @@
             await forumService.AddMainForum(mainForum);
            
             mainForum = new MainForum();
+            navMgr.NavigateTo("/MainForums");
         }
         catch (Exception e)
         {
@@ -71,4 +72,4 @@
 
 
 
-}}
+}
