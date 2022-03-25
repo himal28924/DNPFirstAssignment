@@ -83,8 +83,9 @@ public class ForumFileContext
 
     public MainForum GetMainForumById(int id)
     {
-      MainForum mainForum =   mainForums.First((forum => forum.MainForumId.Equals(id)));
-      return mainForum;
+        MainForum mainForum =   MainForums.First((forum => forum.MainForumId.Equals(id)));
+
+        return mainForum;
 
     }
 

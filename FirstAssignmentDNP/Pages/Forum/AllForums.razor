@@ -1,35 +1,57 @@
-@page "/AllForums"
-@using Entities.Model
+@page "/AllForums/{Id:int}"
+
 @using Contracts
+@using Entities.Model
 @inject IForumService forumService
 <h3>AllForums</h3>
-@*
- @foreach (var item in allForums)
+
+
+
+@foreach (var item in allForums)
         {
             
             <div class="card">
             
-            <div class="field">
-                <label>@item.Title</label>
+                <div class="field">
+                    <span > Title : </span>
+                    <label>@item.Title</label>
+                </div>
+                
+                <div class="userName">
+                    <span > Added by : </span>
+                    <label>@item.Username</label>
+                </div>
+                
+                <div class="field">
+                    <label>@item.Description</label>
+                </div>
+                
             </div>
-            <p>@item.Username</p>
-            <div class="field">
-                <label>@item.Description</label>
-            </div>
-            </div>
-           }
+            
+        }
+
+
 
 
 @code {
+    [Parameter]
+    public int Id { get; set; }
+    
+    
+
     private ICollection<Forum>? allForums;
-    private string title, description, userName ;
+   
     private string errorLabel = "";
 
 
-    protected override void OnInitialized()
+    protected override async void OnInitialized()
     {
-        allForums = forumService.GetAllForumAsync();
+        allForums = forumService.GetMainForumById(Id).Result.AllSubForums;
+    }
+
+    private void nothing()
+    {
+        
     }
 
 }
-*@
