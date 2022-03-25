@@ -13,16 +13,17 @@ public class ForumServiceImpl:IForumService
     {
         this.forumDao = forumDao;
     }
-    /*
+    
    
 
-    public async Task<Forum> AddForumAsync(Forum forum)
+    public async Task<Forum> AddForumAsync(int id,Forum forum)
     {
         Console.WriteLine("Service impl 12");
-        await forumDao.AddForumAsync(forum);
+        await forumDao.AddForumAsync(id,forum);
         return forum;
     }
-
+    
+/*
     public ICollection<Forum> GetAllForumAsync()
     {
         ICollection<Forum> AllForums =  forumDao.GetAllForumAsync();

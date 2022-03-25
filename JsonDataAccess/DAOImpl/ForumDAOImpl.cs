@@ -15,30 +15,34 @@ public class ForumDAOImpl:IForumDAO
     }
   
     
-    /*
+  
     
 
   
 
-    public Task<Forum> AddForumAsync(Forum forum)
+    public async Task<Forum> AddForumAsync(int id,Forum forum)
     {
-        throw new NotImplementedException();
+    
+        forumFileContext.AddSubForum(id, forum);
+        await forumFileContext.SaveChanges();
+        return forum;
     }
-
-    public ICollection<Forum> GetAllForumAsync()
-    {
-      ICollection<Forum> AllForum =   forumFileContext.GetAllForumAsync();
-      return  AllForum;
-    }
-
-    */
+    
+    
+    /*
+      public ICollection<Forum> GetAllForumAsync()
+      {
+        ICollection<Forum> AllForum =   forumFileContext.GetAllForumAsync();
+        return  AllForum;
+      }
+  
+      */
     public async Task<MainForum> AddMainForumAsync(MainForum mainForum)
     {
-       int largestId = forumFileContext.MainForums.Max(t => t.MainForumId);
-        int nextId = largestId+1;
+      int largestId = forumFileContext.MainForums.Max(t => t.MainForumId);
+        int nextId = largestId + 1;
         mainForum.MainForumId = nextId;
-        Console.WriteLine("Inside Forum serice Impl 35");
-        Console.WriteLine(mainForum.CreatedBy + " .." + mainForum.Title + mainForum.MainForumId );
+        mainForum.AllSubForums = new List<Forum>();
         forumFileContext.MainForums?.Add(mainForum);
         await forumFileContext.SaveChanges();
         return mainForum;

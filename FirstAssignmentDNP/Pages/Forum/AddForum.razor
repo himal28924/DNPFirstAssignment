@@ -1,9 +1,9 @@
 @using Contracts
 @using Entities.Model
-@page "/AddForum"
+@page "/AddForum/{Id:int}"
 @inject IForumService forumService
 @inject NavigationManager navMgr
-@*
+
 <h3>Forum</h3>
 
 <AuthorizeView>
@@ -44,12 +44,13 @@
     </Authorized>
 </AuthorizeView>
 
-*@
-@*
+
 @code {
     private Forum forum = new Forum();
     private string errorLabel = "";
 
+    [Parameter]
+    public int Id { get; set; }
 
     private async Task AddForumAsync(string username)
     {
@@ -61,7 +62,7 @@
         try
         {
             forum.Username = username;
-            await forumService.AddForumAsync(forum);
+            await forumService.AddForumAsync(Id,forum);
             navMgr.NavigateTo("/AllForums");
             forum = new Forum();
         }
@@ -72,4 +73,3 @@
     }
     
 }
-*@

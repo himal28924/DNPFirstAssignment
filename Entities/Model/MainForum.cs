@@ -10,13 +10,18 @@ public class MainForum
 
     public string? Title { get; set; }
     public int  MainForumId { get; set; }
+    public ICollection<Forum> AllSubForums{ get; set; }
 
-    public MainForum( int noOfLikes, string createdBy,string title)
+    public int? lastId { get; set; }
+
+    public MainForum( int noOfLikes, string createdBy,string title, ICollection<Forum> forum)
     {
         //AllForum = allForum;
         NoOfLikes = noOfLikes;
         CreatedBy = createdBy;
         Title = title;
+        AllSubForums = forum;
+        lastId = 0;
     }
 
     public MainForum()

@@ -4,7 +4,7 @@ namespace Contracts;
 
 public interface IForumService
 {
-   // public Task<Forum> AddForumAsync(Forum forum);
+   public Task<Forum> AddForumAsync(int id,Forum forum);
 
     //public ICollection<Forum> GetAllForumAsync();
 

@@ -102,5 +102,23 @@ public class ForumFileContext
         await File.WriteAllTextAsync(mainForumPath,serialize);
         mainForums = null;
     }
-    
+
+    public void AddSubForum(int id, Forum forum)
+    {
+        foreach (var variable in MainForums)
+        {
+            if (variable.MainForumId.Equals(id))
+            {
+                int? a = variable.lastId + 1;
+               
+                variable.lastId = a;
+                
+                Console.Write(a + "id");
+
+                forum.Id = ((int) variable.lastId)!;
+                variable.AllSubForums.Add(forum);
+                
+            }
+        }
+    }
 }
