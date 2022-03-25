@@ -41,3 +41,4 @@
 /Users/prabina/Desktop/Development/FirstAssignmentDNP/FirstAssignmentDNP/bin/Debug/net6.0/forum.json
 /Users/prabina/Desktop/Development/FirstAssignmentDNP/FirstAssignmentDNP/obj/Debug/net6.0/scopedcss/Pages/Forum/AddForum.razor.rz.scp.css
 /Users/prabina/Desktop/Development/FirstAssignmentDNP/FirstAssignmentDNP/obj/Debug/net6.0/scopedcss/Pages/Forum/MainForums.razor.rz.scp.css
+/Users/prabina/Desktop/Development/FirstAssignmentDNP/FirstAssignmentDNP/bin/Debug/net6.0/mainForum.json

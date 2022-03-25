@@ -28,11 +28,11 @@
                     {
                         <div class="card-body py-3">
                             <div class="row no-gutters align-items-center">
-                                <div class="col"><a href="/MainForum/@item.MainForumId}" class="text-big font-weight-semibold" data-abc="true">@item.Title</a></div>
+                                <div  class="col text-big font-weight-semibold" data-abc="true" @onclick="@(() => navigateTo(item.MainForumId))">@item.Title</div>
                                 <div class="d-none d-md-block col-6">
                                     <div class="row no-gutters align-items-center">
                                         <div class="col-3">@item.NoOfLikes</div>
-                                        <div class="col-3"></div>
+                                        <div class="col-3">@noOfSubForum</div>
                                         <div class="media col-6 align-items-center"> <img src="https://i.imgur.com/Ur43esv.jpg" alt="" class="d-block ui-w-30 rounded-circle">
                                             <div class="media-body flex-truncate ml-2"> <a href="javascript:void(0)" class="d-block text-truncate" data-abc="true">dfdf</a>
                                                 <div class="text-muted small text-truncate">2d ago &nbsp;·&nbsp; <a href="javascript:void(0)" class="text-muted" data-abc="true">@item.CreatedBy</a></div>
@@ -59,12 +59,12 @@
 
 @code
 {
+    private int? noOfSubForum ;
 
     private ICollection<MainForum>? _mainForums;
 
     private string errorLabel = "";
-    [Parameter]
-    public int Id { get; set; }
+  
 
     protected override void OnInitialized()
     {
@@ -77,11 +77,32 @@
         _mainForums = await forumService.GetAllForums();
         
     }
-    private void navigateTo()
+    private void navigateTo(int id)
     {
-        nvgMgr.NavigateTo($"/AddMainForum");
+        nvgMgr.NavigateTo($"/SubForum/{id}");
     }
-    
-    
-    
+
+    private int? NoOfSubForum(int id)
+    {
+        foreach (var VARIABLE in _mainForums)
+        {
+            
+            if (VARIABLE.MainForumId.Equals(id))
+            {
+                if (VARIABLE.AllSubForums.Count != null)
+                {
+                    noOfSubForum =  VARIABLE.AllSubForums.Count;
+                }
+                else
+                {
+                    noOfSubForum = 0;
+                }
+                
+            }
+        }
+        return noOfSubForum;
+    }
+
+
+
 }
