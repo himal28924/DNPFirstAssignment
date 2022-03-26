@@ -12,4 +12,5 @@ public interface IForumDAO
     MainForum GetMainForumAsync(int id);
     
     ICollection<MainForum>? GetAllForums();
+    void IncrementTotalViews(int id);
 }

@@ -62,3 +62,8 @@ a, .btn-link {
     .blazor-error-boundary::after {
         content: "An error has occurred."
     }
+
+    main{
+        background: rgb(127,197,198);
+        background: linear-gradient(52deg, rgba(127,197,198,1) 19%, rgba(232,185,85,0.8870141806722689) 97%);
+    }

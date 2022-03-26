@@ -1,35 +1,54 @@
+<div class="all">
 @page "/AllForums/{Id:int}"
 
 @using Contracts
 @using Entities.Model
+@inject NavigationManager nvgMgr
 @inject IForumService forumService
-<h3>AllForums</h3>
 
 
+<AuthorizeView>
+    <NotAuthorized>
+        <p> Please go to login</p>
 
-@foreach (var item in allForums)
+    </NotAuthorized>
+    <Authorized >
+        <div class="">
+            <button class="addForumbtn btn-lg float-end btn-grad" style=" margin-right: 10px" onclick="@NavigateToAddSubForum">Create new forum</button>
+        </div>
+
+        <br/>
+        <br/>
+        <br/>
+        @foreach (var item in allForums)
         {
-            
+
             <div class="card">
-            
+
                 <div class="field">
                     <span > Title : </span>
                     <label>@item.Title</label>
                 </div>
-                
+
                 <div class="userName">
                     <span > Added by : </span>
                     <label>@item.Username</label>
                 </div>
-                
+
                 <div class="field">
                     <label>@item.Description</label>
                 </div>
-                
+
             </div>
-            
+
         }
 
+
+
+    </Authorized>
+
+
+</AuthorizeView>
 
 
 
@@ -49,9 +68,10 @@
         allForums = forumService.GetMainForumById(Id).Result.AllSubForums;
     }
 
-    private void nothing()
+    public void NavigateToAddSubForum()
     {
-        
+        nvgMgr.NavigateTo($"/AddForum/{Id}");
     }
 
 }
+</div>
