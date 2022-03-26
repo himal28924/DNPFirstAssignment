@@ -63,7 +63,7 @@
         {
             forum.Username = username;
             await forumService.AddForumAsync(Id,forum);
-            navMgr.NavigateTo("/AllForums");
+            navMgr.NavigateTo("/");
             forum = new Forum();
         }
         catch (Exception e)

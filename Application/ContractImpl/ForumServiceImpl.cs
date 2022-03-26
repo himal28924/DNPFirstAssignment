@@ -54,5 +54,8 @@ public class ForumServiceImpl:IForumService
         return mainForums;
     }
 
-   
+    public void IncrementTotalViews(int id)
+    {
+        forumDao.IncrementTotalViews(id);
+    }
 }

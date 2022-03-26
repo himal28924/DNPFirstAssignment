@@ -13,4 +13,5 @@ public interface IForumService
 
  
     Task<ICollection<MainForum>?> GetAllForums();
+    void IncrementTotalViews(int id);
 }

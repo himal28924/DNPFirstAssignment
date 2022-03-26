@@ -50,7 +50,7 @@ public class ForumDAOImpl:IForumDAO
 
     public MainForum GetMainForumAsync(int id)
     {
-        MainForum mainForum = forumFileContext.GetMainForumById(id);
+        MainForum mainForum = forumFileContext.MainForums.First((forum => forum.MainForumId.Equals(id)));
         return mainForum;
     }
 
@@ -60,5 +60,9 @@ public class ForumDAOImpl:IForumDAO
         return mainForums;
     }
 
-
+    public void IncrementTotalViews(int id)
+    {
+        forumFileContext.MainForums.First((forum => forum.MainForumId.Equals(id))).NoOfViews += 1;
+        forumFileContext?.SaveChanges();
+    }
 }
