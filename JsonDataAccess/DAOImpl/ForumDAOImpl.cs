@@ -39,8 +39,9 @@ public class ForumDAOImpl:IForumDAO
       */
     public async Task<MainForum> AddMainForumAsync(MainForum mainForum)
     {
-      int largestId = forumFileContext.MainForums.Max(t => t.MainForumId);
-        int nextId = largestId + 1;
+     int largestId = forumFileContext.MainForums.Max(t => t.MainForumId);
+     int nextId = largestId + 1;
+    
         mainForum.MainForumId = nextId;
         mainForum.AllSubForums = new List<Forum>();
         forumFileContext.MainForums?.Add(mainForum);
