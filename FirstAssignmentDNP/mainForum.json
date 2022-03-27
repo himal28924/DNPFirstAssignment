@@ -1,79 +1,94 @@
 [
   {
-    "NoOfViews": 20,
+    "NoOfViews": 19,
     "CreatedBy": "Himal",
-    "Title": "First try",
-    "MainForumId": 1,
+    "Title": "Blazor",
+    "MainForumId": 2,
     "AllSubForums": [
       {
-        "Title": "qw",
-        "Description": "qwq",
+        "Title": "Run on WebAssembly or the server",
+        "Description": "Blazor can run your client-side C# code directly in the browser, using WebAssembly. Because it\u0027s real .NET running on WebAssembly, you can re-use code and libraries from server-side parts of your application.\n\nAlternatively, Blazor can run your client logic on the server. Client UI events are sent back to the server using SignalR - a real-time messaging framework. Once execution completes, the required UI changes are sent to the client and merged into the DOM.Tooltip: The document object model(DOM) is a programming interface that represents all elements on an HTML page as nodes in a tree structure. Using the DOM, elements can be updated, added, and removed from the page.",
         "Username": "Himal",
-        "Id": 0
+        "Id": 1
       },
       {
-        "Title": "wwq",
-        "Description": "qww",
+        "Title": "Built on open web standards",
+        "Description": "Blazor uses open web standards without plug-ins or code transpilation.Tooltip: Transpilation is the process of converting code written in one programming language to another. Transpilation to JavaScript is a common approach to enabling languages to run in the browser, but often provides limited functionality. Blazor works in all modern web browsers, including mobile browsers.\n\nCode running in the browser executes in the same security sandbox as JavaScript frameworks. Blazor code executing on the server has the flexibility to do anything you would normally do on the server, such as connecting directly to a database.",
         "Username": "Himal",
-        "Id": 0
+        "Id": 2
       },
       {
-        "Title": "e",
-        "Description": "d",
-        "Username": "Himal",
-        "Id": 0
-      },
-      {
-        "Title": "qqw",
-        "Description": "www",
-        "Username": "Himal",
-        "Id": 0
-      },
-      {
-        "Title": "null exception",
-        "Description": "please",
+        "Title": "Share code and libraries",
+        "Description": "Blazor apps can use existing .NET libraries, thanks to .NET Standard\u2014a formal specification of .NET APIs that are common across all .NET implementations.\n\n.NET Standard allows the same code and libraries to be used on the server, in the browser, or anywhere you write .NET code.",
         "Username": "Himal",
         "Id": 3
       },
       {
-        "Title": "qq",
-        "Description": "qqq",
-        "Username": "Himal",
+        "Title": "ASP.NET Core updates in .NET 7 ",
+        "Description": "Here\u2019s a summary of what\u2019s new in this preview release:\n\nInfer API controller action parameters that come from services\nDependency injection for SignalR hub methods\nProvide endpoint descriptions and summaries for minimal APIs\nBinding arrays and StringValues from headers and query strings in minimal APIs\nCustomize the cookie consent value\n",
+        "Username": "Prabina Bhandari",
         "Id": 4
       },
       {
-        "Title": "Creating sub forum trial",
-        "Description": "trial to create sub frum",
-        "Username": "Himal",
+        "Title": "Announcing ASP.NET Core in .NET 6",
+        "Description": "Here\u2019s a sampling of the great new features and improvements in ASP.NET Core for .NET 6:\n\nHot reload: Apply changes to Razor, C#, and CSS source files into your running app during development without the need to rebuild and restart the app.\nMinimal APIs: Create a new ASP.NET Core app with just a few lines of code using the latest C# features and a simplified hosting model.\nAsync streaming: Asynchronously stream data from the server without any need for buffering.\nIAsyncDisposable: Support for IAsyncDisposable on controllers, page models, and view components.",
+        "Username": "Prabina Bhandari",
         "Id": 5
-      }
-    ],
-    "lastId": 5
-  },
-  {
-    "NoOfViews": 9,
-    "CreatedBy": "Himal",
-    "Title": "Second Forum Title",
-    "MainForumId": 2,
-    "AllSubForums": [
+      },
       {
-        "Title": "zz",
-        "Description": "zz",
+        "Title": "trying to add",
+        "Description": "hiii",
         "Username": "Himal",
-        "Id": 1
+        "Id": 6
       }
     ],
-    "lastId": 1
+    "lastId": 6
   },
   {
-    "NoOfViews": 4,
+    "NoOfViews": 2,
     "CreatedBy": "Himal",
-    "Title": "third trial\n",
+    "Title": "Java",
     "MainForumId": 3,
     "AllSubForums": [
       {
-        "Title": "123",
-        "Description": "111",
+        "Title": "Java 19 could be big",
+        "Description": "The next version of standard Java seems poised to include a foreign function and memory API, a vector API, pattern matching for switch expressions, universal generics, and more.",
+        "Username": "Himal",
+        "Id": 1
+      },
+      {
+        "Title": "Java 8 still dominates, but Java 17 wave is coming \u2013 survey",
+        "Description": "More than one-third of professional Java developers surveyed by Perforce JRebel were using the eight-year-old version of Java for their main application.\n",
+        "Username": "Himal",
+        "Id": 2
+      }
+    ],
+    "lastId": 2
+  },
+  {
+    "NoOfViews": 2,
+    "CreatedBy": "Himal",
+    "Title": "Software designing",
+    "MainForumId": 4,
+    "AllSubForums": [
+      {
+        "Title": "Software design pattern",
+        "Description": "In software engineering, a software design pattern is a general, reusable solution to a commonly occurring problem within a given context in software design. It is not a finished design that can be transformed directly into source or machine code. Rather, it is a description or template for how to solve a problem that can be used in many different situations. Design patterns are formalized best practices that the programmer can use to solve common problems when designing an application or system.\n\nObject-oriented design patterns typically show relationships and interactions between classes or objects, without specifying the final application classes or objects that are involved. Patterns that imply mutable state may be unsuited for functional programming languages. Some patterns can be rendered unnecessary in languages that have built-in support for solving the problem they are trying to solve, and object-oriented patterns are not necessarily suitable for non-object-oriented languages.\n\nDesign patterns may be viewed as a structured approach to computer programming intermediate between the levels of a programming paradigm and a concrete algorithm.",
+        "Username": "Himal",
+        "Id": 1
+      }
+    ],
+    "lastId": 1
+  },
+  {
+    "NoOfViews": 2,
+    "CreatedBy": "Himal",
+    "Title": "Trying forum",
+    "MainForumId": 5,
+    "AllSubForums": [
+      {
+        "Title": "Hi",
+        "Description": "Its me",
         "Username": "Himal",
         "Id": 1
       }
@@ -83,16 +98,8 @@
   {
     "NoOfViews": 0,
     "CreatedBy": "Himal",
-    "Title": "Trial Forum",
-    "MainForumId": 4,
-    "AllSubForums": [],
-    "lastId": 0
-  },
-  {
-    "NoOfViews": 0,
-    "CreatedBy": "Himal",
-    "Title": "Second trial",
-    "MainForumId": 5,
+    "Title": "Trying to add main forum",
+    "MainForumId": 6,
     "AllSubForums": [],
     "lastId": 0
   }
