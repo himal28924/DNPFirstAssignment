@@ -15,10 +15,19 @@ public class UserDAOImpl:IUserDAO
 
     public async Task<User> AddUserAsync(User user)
     {
-        
-        userFileContext.Users.Add(user);
-        await userFileContext.SaveChanges();
-        return user;
+
+        if (userFileContext.IsUsernameAvailable(user.UserName))
+        {
+            userFileContext.Users.Add(user);
+            await userFileContext.SaveChanges();
+            return user;
+        }
+        else
+        {
+            user.UserName = null;
+            return user;
+        }
+
     }
 
     public async Task<User?> GetUserAsync(string username)

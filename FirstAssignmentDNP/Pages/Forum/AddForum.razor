@@ -46,12 +46,14 @@
 
 
 @code {
-    private Forum forum = new Forum();
-    private string errorLabel = "";
+    
 
     [Parameter]
     public int Id { get; set; }
-
+    
+    
+    private Forum forum = new Forum();
+    private string errorLabel = "";
     private async Task AddForumAsync(string username)
     {
         if (string.IsNullOrEmpty(forum.Description) && string.IsNullOrEmpty(forum.Title))
