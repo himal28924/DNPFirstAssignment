@@ -58,14 +58,25 @@
     
     
 
-    private ICollection<Forum>? allForums;
+    private ICollection<Forum>? allForums = new List<Forum>();
    
     private string errorLabel = "";
 
 
-    protected override async void OnInitialized()
+   // protected override  Task OnInitializedAsync()
+   // {
+        
+   //     allForums = await forumService.GetMainForumById(Id).Result.AllSubForums;
+        
+   // }
+    
+    protected override  async Task OnInitializedAsync()
     {
-        allForums = forumService.GetMainForumById(Id).Result.AllSubForums;
+        
+      ICollection<MainForum>?  mainForums = await   forumService.GetAllForums();
+        allForums = mainForums.First(forum => forum.MainForumId.Equals(Id)).AllSubForums;
+
+
     }
 
     public void NavigateToAddSubForum()

@@ -21,12 +21,14 @@ public class UserController:ControllerBase
         try
         {
             User? user = await userDao.GetUserAsync(username);
+            Console.WriteLine(user.UserName);
             return Ok(user);
         }
         catch (Exception e)
         {
             return StatusCode(500, e.Message);
         }
+        
     }
 
 

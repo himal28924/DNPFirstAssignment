@@ -68,7 +68,7 @@ public class ForumFileContext
 
 
 
-    public ICollection<MainForum?> MainForums {  
+    public ICollection<MainForum>? MainForums {  
         get
     {
         if (mainForums == null)
@@ -89,9 +89,9 @@ public class ForumFileContext
 
    // }
 
-    private void LoadData()
+    private  void LoadData()
     {
-        string content = File.ReadAllText(mainForumPath);
+        string content =  File.ReadAllText(mainForumPath);
         mainForums =JsonSerializer.Deserialize<List<MainForum>>(content);
            
     } 

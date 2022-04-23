@@ -8,7 +8,6 @@
     ".NETCoreApp,Version=v6.0": {
       "WebAPI/1.0.0": {
         "dependencies": {
-          "Contracts": "1.0.0",
           "Entities": "1.0.0",
           "JsonDataAccess": "1.0.0",
           "Swashbuckle.AspNetCore": "6.2.3"

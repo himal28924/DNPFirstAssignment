@@ -11,6 +11,6 @@ public interface IForumDAO
     //  ICollection<MainForum> GetALLMainForumHomeForHomepage();
     MainForum GetMainForumAsync(int id);
     
-    ICollection<MainForum>? GetAllForums();
-    void IncrementTotalViews(int id);
+    Task<ICollection<MainForum>> GetAllForums();
+    
 }

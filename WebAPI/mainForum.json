@@ -1,6 +1,6 @@
 [
   {
-    "NoOfViews": 20,
+    "NoOfViews": 56,
     "CreatedBy": "Himal",
     "Title": "Blazor",
     "MainForumId": 2,
@@ -40,12 +40,18 @@
         "Description": "hiii",
         "Username": "Himal",
         "Id": 6
+      },
+      {
+        "Title": "What is going on ",
+        "Description": "PLease work ",
+        "Username": "Himal",
+        "Id": 7
       }
     ],
-    "lastId": 6
+    "lastId": 7
   },
   {
-    "NoOfViews": 3,
+    "NoOfViews": 7,
     "CreatedBy": "Himal",
     "Title": "Java",
     "MainForumId": 3,
@@ -66,7 +72,7 @@
     "lastId": 2
   },
   {
-    "NoOfViews": 2,
+    "NoOfViews": 3,
     "CreatedBy": "Himal",
     "Title": "Software designing",
     "MainForumId": 4,
@@ -82,9 +88,15 @@
         "Description": "trying to add sub  forum from swagger",
         "Username": "NewUser",
         "Id": 2
+      },
+      {
+        "Title": "trying to addd inside sotware",
+        "Description": "please final work ",
+        "Username": "Himal",
+        "Id": 3
       }
     ],
-    "lastId": 2
+    "lastId": 3
   },
   {
     "NoOfViews": 2,
@@ -106,6 +118,22 @@
     "CreatedBy": "Himal",
     "Title": "Trying to add main forum",
     "MainForumId": 6,
+    "AllSubForums": [],
+    "lastId": 0
+  },
+  {
+    "NoOfViews": 0,
+    "CreatedBy": "New User",
+    "Title": "eee",
+    "MainForumId": 7,
+    "AllSubForums": [],
+    "lastId": 0
+  },
+  {
+    "NoOfViews": 0,
+    "CreatedBy": "New User",
+    "Title": "wtf",
+    "MainForumId": 8,
     "AllSubForums": [],
     "lastId": 0
   }

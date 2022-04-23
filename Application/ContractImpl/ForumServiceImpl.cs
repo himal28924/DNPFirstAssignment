@@ -3,8 +3,8 @@ using Contracts;
 using Entities.Model;
 
 namespace Application.ContractImpl;
-
-public class ForumServiceImpl:IForumService
+/**
+public class ForumServiceImpl
 {
     private IForumDAO forumDao;
 
@@ -28,7 +28,7 @@ public class ForumServiceImpl:IForumService
         ICollection<Forum> AllForums =  forumDao.GetAllForumAsync();
         return AllForums;
     }
-    */
+    
 
     public async Task<MainForum> AddMainForum(MainForum mainForum)
     {
@@ -49,12 +49,10 @@ public class ForumServiceImpl:IForumService
     public async Task<ICollection<MainForum>?> GetAllForums()
     {
         ICollection<MainForum>? mainForums = forumDao.GetAllForums();
-        Console.WriteLine(mainForums.Count);
+      
         return mainForums;
     }
 
-    public void IncrementTotalViews(int id)
-    {
-        forumDao.IncrementTotalViews(id);
-    }
+   
 }
+**/

@@ -1,9 +1,8 @@
-using Application.ContractImpl;
-using Application.DAOInterface;
+
 using Contracts;
 using FirstAssignmentDNP.Authentication;
-using JsonDataAccess.DAOImpl;
-using JsonDataAccess.FileContext;
+using HttpServices;
+
 using Microsoft.AspNetCore.Components.Authorization;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -11,14 +10,13 @@ var builder = WebApplication.CreateBuilder(args);
 // Add services to the container.
 builder.Services.AddRazorPages();
 builder.Services.AddServerSideBlazor();
-builder.Services.AddScoped<UserFileContext>();
-builder.Services.AddScoped<IUserService,UserServiceImpl>();
+
 builder.Services.AddScoped<AuthenticationStateProvider,SimpleAuthenticationStateProvider>();
-builder.Services.AddScoped<IUserDAO,UserDAOImpl>();
+builder.Services.AddScoped<IUserService,UserHttpService>();
 builder.Services.AddScoped<IAuthService,AuthServiceImpl>();
-builder.Services.AddScoped<IForumDAO, ForumDAOImpl>();
-builder.Services.AddScoped<IForumService, ForumServiceImpl>();
-builder.Services.AddScoped<ForumFileContext>();
+builder.Services.AddScoped<IForumService, ForumHttpService>();
+
+
 
 
 var app = builder.Build();

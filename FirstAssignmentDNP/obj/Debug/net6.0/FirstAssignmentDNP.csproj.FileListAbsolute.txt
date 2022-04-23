@@ -9,9 +9,7 @@
 /Users/prabina/Desktop/Development/FirstAssignmentDNP/FirstAssignmentDNP/bin/Debug/net6.0/Application.dll
 /Users/prabina/Desktop/Development/FirstAssignmentDNP/FirstAssignmentDNP/bin/Debug/net6.0/Contracts.dll
 /Users/prabina/Desktop/Development/FirstAssignmentDNP/FirstAssignmentDNP/bin/Debug/net6.0/Entities.dll
-/Users/prabina/Desktop/Development/FirstAssignmentDNP/FirstAssignmentDNP/bin/Debug/net6.0/JsonDataAccess.dll
 /Users/prabina/Desktop/Development/FirstAssignmentDNP/FirstAssignmentDNP/bin/Debug/net6.0/Application.pdb
-/Users/prabina/Desktop/Development/FirstAssignmentDNP/FirstAssignmentDNP/bin/Debug/net6.0/JsonDataAccess.pdb
 /Users/prabina/Desktop/Development/FirstAssignmentDNP/FirstAssignmentDNP/bin/Debug/net6.0/Contracts.pdb
 /Users/prabina/Desktop/Development/FirstAssignmentDNP/FirstAssignmentDNP/bin/Debug/net6.0/Entities.pdb
 /Users/prabina/Desktop/Development/FirstAssignmentDNP/FirstAssignmentDNP/obj/Debug/net6.0/FirstAssignmentDNP.csproj.AssemblyReference.cache
@@ -37,10 +35,9 @@
 /Users/prabina/Desktop/Development/FirstAssignmentDNP/FirstAssignmentDNP/obj/Debug/net6.0/ref/FirstAssignmentDNP.dll
 /Users/prabina/Desktop/Development/FirstAssignmentDNP/FirstAssignmentDNP/obj/Debug/net6.0/scopedcss/Pages/UserLog/LogIn.razor.rz.scp.css
 /Users/prabina/Desktop/Development/FirstAssignmentDNP/FirstAssignmentDNP/obj/Debug/net6.0/scopedcss/Pages/UserLog/SignInOrUp.razor.rz.scp.css
-/Users/prabina/Desktop/Development/FirstAssignmentDNP/FirstAssignmentDNP/bin/Debug/net6.0/users.json
-/Users/prabina/Desktop/Development/FirstAssignmentDNP/FirstAssignmentDNP/bin/Debug/net6.0/forum.json
 /Users/prabina/Desktop/Development/FirstAssignmentDNP/FirstAssignmentDNP/obj/Debug/net6.0/scopedcss/Pages/Forum/AddForum.razor.rz.scp.css
 /Users/prabina/Desktop/Development/FirstAssignmentDNP/FirstAssignmentDNP/obj/Debug/net6.0/scopedcss/Pages/Forum/MainForums.razor.rz.scp.css
 /Users/prabina/Desktop/Development/FirstAssignmentDNP/FirstAssignmentDNP/obj/Debug/net6.0/scopedcss/Pages/Forum/AddMainForum.razor.rz.scp.css
 /Users/prabina/Desktop/Development/FirstAssignmentDNP/FirstAssignmentDNP/obj/Debug/net6.0/scopedcss/Pages/Forum/AllForums.razor.rz.scp.css
-/Users/prabina/Desktop/Development/FirstAssignmentDNP/FirstAssignmentDNP/bin/Debug/net6.0/mainForum.json
+/Users/prabina/Desktop/Development/FirstAssignmentDNP/FirstAssignmentDNP/bin/Debug/net6.0/HttpServices.dll
+/Users/prabina/Desktop/Development/FirstAssignmentDNP/FirstAssignmentDNP/bin/Debug/net6.0/HttpServices.pdb

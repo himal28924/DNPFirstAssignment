@@ -275,7 +275,6 @@
   },
   "projectFileDependencyGroups": {
     "net6.0": [
-      "Contracts >= 1.0.0",
       "Entities >= 1.0.0",
       "JsonDataAccess >= 1.0.0",
       "Swashbuckle.AspNetCore >= 6.2.3"
@@ -306,9 +305,6 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "/Users/prabina/Desktop/Development/FirstAssignmentDNP/Contracts/Contracts.csproj": {
-              "projectPath": "/Users/prabina/Desktop/Development/FirstAssignmentDNP/Contracts/Contracts.csproj"
-            },
             "/Users/prabina/Desktop/Development/FirstAssignmentDNP/Entities/Entities.csproj": {
               "projectPath": "/Users/prabina/Desktop/Development/FirstAssignmentDNP/Entities/Entities.csproj"
             },
