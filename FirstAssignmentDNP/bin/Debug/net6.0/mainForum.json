@@ -1,6 +1,6 @@
 [
   {
-    "NoOfViews": 15,
+    "NoOfViews": 19,
     "CreatedBy": "Himal",
     "Title": "Blazor",
     "MainForumId": 2,
@@ -34,9 +34,15 @@
         "Description": "Here\u2019s a sampling of the great new features and improvements in ASP.NET Core for .NET 6:\n\nHot reload: Apply changes to Razor, C#, and CSS source files into your running app during development without the need to rebuild and restart the app.\nMinimal APIs: Create a new ASP.NET Core app with just a few lines of code using the latest C# features and a simplified hosting model.\nAsync streaming: Asynchronously stream data from the server without any need for buffering.\nIAsyncDisposable: Support for IAsyncDisposable on controllers, page models, and view components.",
         "Username": "Prabina Bhandari",
         "Id": 5
+      },
+      {
+        "Title": "trying to add",
+        "Description": "hiii",
+        "Username": "Himal",
+        "Id": 6
       }
     ],
-    "lastId": 5
+    "lastId": 6
   },
   {
     "NoOfViews": 2,
@@ -88,5 +94,13 @@
       }
     ],
     "lastId": 1
+  },
+  {
+    "NoOfViews": 0,
+    "CreatedBy": "Himal",
+    "Title": "Trying to add main forum",
+    "MainForumId": 6,
+    "AllSubForums": [],
+    "lastId": 0
   }
 ]
