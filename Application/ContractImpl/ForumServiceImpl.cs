@@ -18,7 +18,6 @@ public class ForumServiceImpl:IForumService
 
     public async Task<Forum> AddForumAsync(int id,Forum forum)
     {
-        Console.WriteLine("Service impl 12");
         await forumDao.AddForumAsync(id,forum);
         return forum;
     }

@@ -13,5 +13,10 @@
     "UserName": "Himal",
     "Password": "12312",
     "Name": "Himal  Sharma"
+  },
+  {
+    "UserName": "NewUser",
+    "Password": "123123",
+    "Name": "New User"
   }
 ]
