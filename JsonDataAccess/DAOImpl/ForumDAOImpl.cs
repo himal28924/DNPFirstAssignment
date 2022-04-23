@@ -52,18 +52,19 @@ public class ForumDAOImpl:IForumDAO
     public MainForum GetMainForumAsync(int id)
     {
         MainForum mainForum = forumFileContext.MainForums.First((forum => forum.MainForumId.Equals(id)));
+        IncrementTotalViews(id);
         return mainForum;
     }
 
-    public ICollection<MainForum>? GetAllForums()
+    public  async Task<ICollection<MainForum>> GetAllForums()
     {
         ICollection<MainForum>? mainForums = forumFileContext.MainForums;
         return mainForums;
     }
 
-    public void IncrementTotalViews(int id)
+    private void IncrementTotalViews(int id)
     {
-        forumFileContext.MainForums.First((forum => forum.MainForumId.Equals(id))).NoOfViews += 1;
+        forumFileContext.MainForums!.First(forum => forum.MainForumId.Equals(id)).NoOfViews += 1;
         forumFileContext?.SaveChanges();
     }
 }

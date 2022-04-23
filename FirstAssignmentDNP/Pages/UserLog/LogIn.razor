@@ -2,6 +2,7 @@
 @page "/SignIn"
 
 <h3>LogIn</h3>
+@inject IForumService forumService
 @inject IAuthService authService
 @inject NavigationManager navMgr
 
@@ -57,8 +58,9 @@
         {
            
             await authService.LoginAsync(userName, password);
-            
+          
             navMgr.NavigateTo("/");
+            
         }
         catch (Exception e)
         {

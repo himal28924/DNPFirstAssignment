@@ -196,8 +196,8 @@
               "/Users/prabina/Desktop/Development/FirstAssignmentDNP/Application/Application.csproj": {
                 "projectPath": "/Users/prabina/Desktop/Development/FirstAssignmentDNP/Application/Application.csproj"
               },
-              "/Users/prabina/Desktop/Development/FirstAssignmentDNP/JsonDataAccess/JsonDataAccess.csproj": {
-                "projectPath": "/Users/prabina/Desktop/Development/FirstAssignmentDNP/JsonDataAccess/JsonDataAccess.csproj"
+              "/Users/prabina/Desktop/Development/FirstAssignmentDNP/HttpServices/HttpServices.csproj": {
+                "projectPath": "/Users/prabina/Desktop/Development/FirstAssignmentDNP/HttpServices/HttpServices.csproj"
               }
             }
           }
@@ -233,14 +233,14 @@
         }
       }
     },
-    "/Users/prabina/Desktop/Development/FirstAssignmentDNP/JsonDataAccess/JsonDataAccess.csproj": {
+    "/Users/prabina/Desktop/Development/FirstAssignmentDNP/HttpServices/HttpServices.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/prabina/Desktop/Development/FirstAssignmentDNP/JsonDataAccess/JsonDataAccess.csproj",
-        "projectName": "JsonDataAccess",
-        "projectPath": "/Users/prabina/Desktop/Development/FirstAssignmentDNP/JsonDataAccess/JsonDataAccess.csproj",
+        "projectUniqueName": "/Users/prabina/Desktop/Development/FirstAssignmentDNP/HttpServices/HttpServices.csproj",
+        "projectName": "HttpServices",
+        "projectPath": "/Users/prabina/Desktop/Development/FirstAssignmentDNP/HttpServices/HttpServices.csproj",
         "packagesPath": "/Users/prabina/.nuget/packages/",
-        "outputPath": "/Users/prabina/Desktop/Development/FirstAssignmentDNP/JsonDataAccess/obj/",
+        "outputPath": "/Users/prabina/Desktop/Development/FirstAssignmentDNP/HttpServices/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/prabina/.nuget/NuGet/NuGet.Config"
@@ -255,11 +255,8 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "/Users/prabina/Desktop/Development/FirstAssignmentDNP/Application/Application.csproj": {
-                "projectPath": "/Users/prabina/Desktop/Development/FirstAssignmentDNP/Application/Application.csproj"
-              },
-              "/Users/prabina/Desktop/Development/FirstAssignmentDNP/Entities/Entities.csproj": {
-                "projectPath": "/Users/prabina/Desktop/Development/FirstAssignmentDNP/Entities/Entities.csproj"
+              "/Users/prabina/Desktop/Development/FirstAssignmentDNP/Contracts/Contracts.csproj": {
+                "projectPath": "/Users/prabina/Desktop/Development/FirstAssignmentDNP/Contracts/Contracts.csproj"
               }
             }
           }

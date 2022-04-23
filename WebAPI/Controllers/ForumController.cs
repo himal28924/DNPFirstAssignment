@@ -34,8 +34,9 @@ public class ForumController:ControllerBase
     
     //adding main forum
     [HttpPost]
-    public async Task<ActionResult<MainForum>> AddMainForumAsync([FromBody]MainForum mainForum)
+    public async Task<ActionResult<MainForum>> AddMainForumAsync([FromBody] MainForum mainForum)
     {
+      
         try
         {
             MainForum forumAdded = await forumDao.AddMainForumAsync( mainForum);
@@ -49,12 +50,14 @@ public class ForumController:ControllerBase
     
     [HttpGet]
     [Route("{id:int}")]
-    public async Task<ActionResult<MainForum>> GetMainForumAsync([FromBody]int id)
+    public async Task<ActionResult<MainForum>> GetMainForumAsync([FromRoute]int id)
     {
         try
         {
+            
             MainForum forumReturned =  forumDao.GetMainForumAsync( id);
-            return Created($"/AllForums/{forumReturned.MainForumId}",forumReturned);
+            
+            return Ok(forumReturned);
         }
         catch (Exception e)
         {
@@ -63,13 +66,13 @@ public class ForumController:ControllerBase
     }
     
     
-    [HttpGet]
-    public async Task<ActionResult<Forum>> GetAllForum()
+    [HttpGet] 
+    public async Task<ActionResult<ICollection<MainForum>>> GetAllForum()
     {
         try
         {
-            ICollection<MainForum>? forumReturned =  forumDao.GetAllForums();
-            return Created($"/AllForums",forumReturned);
+            ICollection<MainForum>? forumReturned = await forumDao.GetAllForums();
+            return Ok(forumReturned);
         }
         catch (Exception e)
         {

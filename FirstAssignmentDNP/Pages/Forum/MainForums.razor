@@ -1,7 +1,7 @@
 @page "/"
 @using Contracts
 @using Entities.Model
-@using FirstAssignmentDNP.Pages.UserLog
+
 @inject NavigationManager nvgMgr
 @inject IForumService forumService
 
@@ -25,9 +25,9 @@
                                      </div>
                                  </div>
                              </div>
-                             @if (_mainForums != null)
+                             @if (mainForums != null)
                              {
-                                 @foreach (var item in _mainForums)
+                                 @foreach (var item in mainForums)
                                  {
                                      <div class="card-body py-3">
                                          <div class="row no-gutters align-items-center">
@@ -78,32 +78,28 @@
 {
     private int? noOfSubForum ;
 
-    private ICollection<MainForum>? _mainForums;
+    private ICollection<MainForum>? mainForums;
 
     private string errorLabel = "";
   
 
-    protected override void OnInitialized()
+    protected override async Task OnInitializedAsync()
     {
-        GetMainForums();
-        
+
+        mainForums = await forumService.GetAllForums();
+
     }
 
-    private async void GetMainForums()
-    {
-       
-        _mainForums = await forumService.GetAllForums();
-        
-    }
+    
     private void navigateTo(int id)
     {
-        forumService.IncrementTotalViews(id);
+       
         nvgMgr.NavigateTo($"/AllForums/{id}");
     }
     
     private int? NoOfSubForum(int id)
     {
-        foreach (var VARIABLE in _mainForums)
+        foreach (var VARIABLE in mainForums)
             {
                 if (VARIABLE.MainForumId.Equals(id))
                 {
