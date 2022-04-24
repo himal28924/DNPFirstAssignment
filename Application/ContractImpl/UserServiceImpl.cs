@@ -1,11 +1,11 @@
 
 using Application.DAOInterface;
-using Contracts;
+
 using Entities.Model;
 
 namespace Application.ContractImpl;
 
-public class UserServiceImpl:IUserService
+public class UserServiceImpl
 {
 
 private IUserDAO userDao;
