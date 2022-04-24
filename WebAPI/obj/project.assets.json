@@ -77,7 +77,6 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v6.0",
         "dependencies": {
-          "Contracts": "1.0.0",
           "Entities": "1.0.0"
         },
         "compile": {
@@ -85,19 +84,6 @@
         },
         "runtime": {
           "bin/placeholder/Application.dll": {}
-        }
-      },
-      "Contracts/1.0.0": {
-        "type": "project",
-        "framework": ".NETCoreApp,Version=v6.0",
-        "dependencies": {
-          "Entities": "1.0.0"
-        },
-        "compile": {
-          "bin/placeholder/Contracts.dll": {}
-        },
-        "runtime": {
-          "bin/placeholder/Contracts.dll": {}
         }
       },
       "Entities/1.0.0": {
@@ -256,11 +242,6 @@
       "type": "project",
       "path": "../Application/Application.csproj",
       "msbuildProject": "../Application/Application.csproj"
-    },
-    "Contracts/1.0.0": {
-      "type": "project",
-      "path": "../Contracts/Contracts.csproj",
-      "msbuildProject": "../Contracts/Contracts.csproj"
     },
     "Entities/1.0.0": {
       "type": "project",

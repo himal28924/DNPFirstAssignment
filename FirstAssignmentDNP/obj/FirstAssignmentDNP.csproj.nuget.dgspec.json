@@ -26,9 +26,6 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "/Users/prabina/Desktop/Development/FirstAssignmentDNP/Contracts/Contracts.csproj": {
-                "projectPath": "/Users/prabina/Desktop/Development/FirstAssignmentDNP/Contracts/Contracts.csproj"
-              },
               "/Users/prabina/Desktop/Development/FirstAssignmentDNP/Entities/Entities.csproj": {
                 "projectPath": "/Users/prabina/Desktop/Development/FirstAssignmentDNP/Entities/Entities.csproj"
               }
