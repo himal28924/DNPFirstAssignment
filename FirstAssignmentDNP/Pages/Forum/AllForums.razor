@@ -63,21 +63,15 @@
     private string errorLabel = "";
 
 
-   // protected override  Task OnInitializedAsync()
-   // {
-        
-   //     allForums = await forumService.GetMainForumById(Id).Result.AllSubForums;
-        
-   // }
-    
-    protected override  async Task OnInitializedAsync()
+  
+
+    protected override async Task OnInitializedAsync()
     {
-        
-      ICollection<MainForum>?  mainForums = await   forumService.GetAllForums();
-        allForums = mainForums.First(forum => forum.MainForumId.Equals(Id)).AllSubForums;
+        List<Forum> gettingMainForum = await forumService.GetSubForumByMainForumId(Id);
 
-
+        allForums = gettingMainForum;
     }
+
 
     public void NavigateToAddSubForum()
     {

@@ -6,6 +6,7 @@ public class Forum
     public string Description { get; set; }
     public string Username { get; set; }
     public int Id { get; set; }
+    public  int MainForumId { get; set; }
 
 
     public Forum(string title, string description, string username, int id)

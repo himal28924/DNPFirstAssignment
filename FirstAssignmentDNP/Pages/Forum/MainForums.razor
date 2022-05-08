@@ -76,7 +76,7 @@
 
 @code
 {
-    private int? noOfSubForum ;
+    private int? noOfSubForum = 0 ;
 
     private ICollection<MainForum>? mainForums;
 
@@ -99,17 +99,16 @@
     
     private int? NoOfSubForum(int id)
     {
-        foreach (var VARIABLE in mainForums)
+        foreach (var variable in mainForums)
             {
-                if (VARIABLE.MainForumId.Equals(id))
+                if (variable.MainForumId.Equals(id))
                 {
-                    noOfSubForum = VARIABLE.AllSubForums.Count;
-                    break;
+                    if (variable.AllSubForums != null  )
+                    {
+                        noOfSubForum = variable.AllSubForums.Count;
+                    }
                 }
-                else
-                {
-                    noOfSubForum = 0;
-                }
+              
                 
             }
       

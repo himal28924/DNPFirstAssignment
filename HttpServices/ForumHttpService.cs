@@ -57,7 +57,7 @@ public class ForumHttpService : IForumService
         return returned;
     }
 
-    public async Task<MainForum> GetMainForumById(int id)
+    public async Task<List<Forum>> GetSubForumByMainForumId(int id)
     {
         using HttpClient client = new ();
                  
@@ -71,7 +71,7 @@ public class ForumHttpService : IForumService
             throw new Exception($"Error: {response.StatusCode}, {content}");
         }
 
-        MainForum forums = JsonSerializer.Deserialize<MainForum>(content, new JsonSerializerOptions
+        List<Forum> forums = JsonSerializer.Deserialize<List<Forum>>(content, new JsonSerializerOptions
         {
             PropertyNameCaseInsensitive = true
         })!;

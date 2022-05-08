@@ -1,0 +1,31 @@
+﻿<Properties StartupConfiguration="{23D4F7A3-8171-4A2F-B3B4-4DA18DE4AEDC}|Default">
+  <MonoDevelop.Ide.ItemProperties.FirstAssignmentDNP PreferredExecutionTarget="/Applications/Google Chrome.app" />
+  <MonoDevelop.Ide.ItemProperties.WebAPI PreferredExecutionTarget="/Applications/Google Chrome.app" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="FirstAssignmentDNP/Program.cs">
+    <Files>
+      <File FileName="Contracts/IAuthService.cs" Line="8" Column="13" />
+      <File FileName="Contracts/IForumService.cs" Line="5" Column="20" />
+      <File FileName="FirstAssignmentDNP/Authentication/SimpleAuthenticationStateProvider.cs" Line="1" Column="1" />
+      <File FileName="FirstAssignmentDNP/Authentication/AuthServiceImpl.cs" Line="1" Column="1" />
+      <File FileName="FirstAssignmentDNP/appsettings.json" Line="1" Column="1" />
+      <File FileName="FirstAssignmentDNP/App.razor" Line="1" Column="1" />
+      <File FileName="FirstAssignmentDNP/Program.cs" Line="8" Column="23" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="FirstAssignmentDNP" expanded="True">
+            <Node name="FirstAssignmentDNP" expanded="True" />
+            <Node name="HttpServices" expanded="True" />
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>

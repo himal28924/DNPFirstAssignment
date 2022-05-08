@@ -9,7 +9,7 @@ public interface IForumDAO
    public Task<MainForum> AddMainForumAsync(MainForum mainForum);
 
     //  ICollection<MainForum> GetALLMainForumHomeForHomepage();
-    MainForum GetMainForumAsync(int id);
+    Task<List<Forum>> GetSubForumByMainForumId(int id);
     
     Task<ICollection<MainForum>> GetAllForums();
     

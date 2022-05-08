@@ -9,7 +9,7 @@ public interface IForumService
     //public ICollection<Forum> GetAllForumAsync();
 
     public Task<MainForum> AddMainForum(MainForum mainForum);
-    Task<MainForum> GetMainForumById(int id);
+    Task<List<Forum>> GetSubForumByMainForumId(int id);
 
  
     Task<ICollection<MainForum>?> GetAllForums();

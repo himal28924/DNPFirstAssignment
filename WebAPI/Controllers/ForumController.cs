@@ -50,12 +50,12 @@ public class ForumController:ControllerBase
     
     [HttpGet]
     [Route("{id:int}")]
-    public async Task<ActionResult<MainForum>> GetMainForumAsync([FromRoute]int id)
+    public async Task<ActionResult<List<Forum>>> GetSubForumByMainForumId([FromRoute]int id)
     {
         try
         {
             
-            MainForum forumReturned =  forumDao.GetMainForumAsync( id);
+            List<Forum> forumReturned =  await forumDao.GetSubForumByMainForumId( id);
             
             return Ok(forumReturned);
         }

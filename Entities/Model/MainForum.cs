@@ -1,4 +1,5 @@
 using System.Collections;
+using System.ComponentModel.DataAnnotations;
 
 namespace Entities.Model;
 
@@ -9,6 +10,7 @@ public class MainForum
     public string? CreatedBy { get; set; }
 
     public string? Title { get; set; }
+    [Key]
     public int  MainForumId { get; set; }
     public ICollection<Forum>? AllSubForums{ get; set; }
 

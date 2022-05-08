@@ -1,6 +1,7 @@
 using Application.DAOInterface;
-using JsonDataAccess.DAOImpl;
-using JsonDataAccess.FileContext;
+using EFC;
+
+using UserDAOImpl = EFC.UserDAOImpl;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -11,8 +12,8 @@ builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 builder.Services.AddScoped<IUserDAO, UserDAOImpl>();
-builder.Services.AddScoped<UserFileContext>();
-builder.Services.AddScoped<ForumFileContext>();
+builder.Services.AddScoped<DAOContext>();
+
 builder.Services.AddScoped<IForumDAO, ForumDAOImpl>();
 
 var app = builder.Build();

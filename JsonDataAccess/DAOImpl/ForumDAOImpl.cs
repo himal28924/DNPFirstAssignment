@@ -49,11 +49,11 @@ public class ForumDAOImpl:IForumDAO
         return mainForum;
     }
 
-    public MainForum GetMainForumAsync(int id)
+    public async Task<List<Forum>> GetSubForumByMainForumId(int id)
     {
         MainForum mainForum = forumFileContext.MainForums.First((forum => forum.MainForumId.Equals(id)));
         IncrementTotalViews(id);
-        return mainForum;
+        return (List<Forum>) mainForum.AllSubForums;
     }
 
     public  async Task<ICollection<MainForum>> GetAllForums()

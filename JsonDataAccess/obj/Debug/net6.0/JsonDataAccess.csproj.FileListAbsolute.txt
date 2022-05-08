@@ -2,11 +2,9 @@
 /Users/prabina/Desktop/Development/FirstAssignmentDNP/JsonDataAccess/bin/Debug/net6.0/JsonDataAccess.dll
 /Users/prabina/Desktop/Development/FirstAssignmentDNP/JsonDataAccess/bin/Debug/net6.0/JsonDataAccess.pdb
 /Users/prabina/Desktop/Development/FirstAssignmentDNP/JsonDataAccess/bin/Debug/net6.0/Application.dll
-/Users/prabina/Desktop/Development/FirstAssignmentDNP/JsonDataAccess/bin/Debug/net6.0/Contracts.dll
 /Users/prabina/Desktop/Development/FirstAssignmentDNP/JsonDataAccess/bin/Debug/net6.0/Entities.dll
 /Users/prabina/Desktop/Development/FirstAssignmentDNP/JsonDataAccess/bin/Debug/net6.0/Application.pdb
 /Users/prabina/Desktop/Development/FirstAssignmentDNP/JsonDataAccess/bin/Debug/net6.0/Entities.pdb
-/Users/prabina/Desktop/Development/FirstAssignmentDNP/JsonDataAccess/bin/Debug/net6.0/Contracts.pdb
 /Users/prabina/Desktop/Development/FirstAssignmentDNP/JsonDataAccess/obj/Debug/net6.0/JsonDataAccess.csproj.AssemblyReference.cache
 /Users/prabina/Desktop/Development/FirstAssignmentDNP/JsonDataAccess/obj/Debug/net6.0/JsonDataAccess.GeneratedMSBuildEditorConfig.editorconfig
 /Users/prabina/Desktop/Development/FirstAssignmentDNP/JsonDataAccess/obj/Debug/net6.0/JsonDataAccess.AssemblyInfoInputs.cache
